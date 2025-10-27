@@ -7,7 +7,7 @@ function TodoForm() {
 
     const add = (e) => {
         e.preventDefault()
-        if(todo != "") {
+        if(todo.trim() != "") {
             addTodo({ todo, completed: false })
         }
         setTodo("")
